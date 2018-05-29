@@ -2,17 +2,23 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function reverseNumberNew(num) {
+  return num
+    .split('')
+    .reduce((reversedNumber, digit) =>
+      reversedNumber += Math.abs((digit%10)-10).toString(),
+      ''
+     )
+}
+
 function reverseNumber(num) {
-  let result;
+  let result = ''
+  
   for (let i = 0; i < num.length; i++) {
-     if(!result) {
-       result = Math.abs((num[i]%10)-10);
-     } else {
-        result += Math.abs((num[i]%10)-10) + '';
-     }
+     result += Math.abs((num[i]%10)-10).toString();
   }
 
-    return result;
+  return result;
 }
 
 class ItemName extends React.Component {
@@ -41,31 +47,26 @@ class App extends Component {
       super(props);
 
       this.state = {
-        value : '',
-        revValue: ''
+        value : ''
       }
     }
 
-     handleToNormal = (value) => {
+     handleNormal = (value) => {
       this.setState({
-        value: reverseNumber(value),
-        revValue: value
+        value
       });
     }
-
-    handleToReverse = (value) => {
-      console.log('sdv '+value)
+     
+     handleReversed = (value) => {
       this.setState({
-        value: value,
-        revValue: reverseNumber(value)
+        reverseNumber(value)
       });
     }
 
     handleOnClick = (e) => {
       e.preventDefault();
       this.setState({
-        value: this.state.revValue,
-        revValue: this.state.value
+        value: reverseNumber(this.state.value),
       });
     }
 
@@ -76,12 +77,12 @@ class App extends Component {
           <ItemName
             name="Normal number: "
             value={this.state.value}
-            onValueChange={this.handleToReverse}
+            onValueChange={this.handleNormal}
           />
           <ItemName
             name="Reversed number: "
-            value={this.state.revValue}
-            onValueChange={this.handleToNormal}
+            value={reverseNumber(this.state.value)}
+            onValueChange={this.handleReversed}
           />
           <br />
           <input
