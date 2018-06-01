@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ac7c710-c288-4ffd-9c94-74cd88062951" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.eslintignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintrc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ItemName.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ItemName.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,11 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/App.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
               <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -114,6 +119,7 @@
         <option value="$PROJECT_DIR$/src/components/ItemName.js" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
         <option value="$PROJECT_DIR$/.eslintignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -252,12 +258,12 @@
       <workItem from="1527691003673" duration="2649000" />
       <workItem from="1527759943324" duration="9299000" />
       <workItem from="1527774400967" duration="7346000" />
-      <workItem from="1527838378775" duration="11462000" />
+      <workItem from="1527838378775" duration="11511000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49850000" />
+    <option name="totallyTimeSpent" value="49899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -270,8 +276,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6184874" visible="true" weight="0.15068494" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6184874" visible="true" weight="0.15068494" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49853158" weight="0.32883435" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50790304" side_tool="true" weight="0.35185185" />
@@ -279,7 +286,7 @@
       <window_info id="npm" order="2" sideWeight="0.5018587" side_tool="true" weight="0.25403818" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.48366013" />
       <window_info id="Structure" order="1" sideWeight="0.38279933" side_tool="true" weight="0.15068494" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49209693" visible="true" weight="0.2603486" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49209693" visible="true" weight="0.2603486" />
       <window_info id="Favorites" order="2" sideWeight="0.5018587" side_tool="true" weight="0.25403818" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39891452" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -349,7 +356,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/reverseNumber.js" />
     <entry file="file://$PROJECT_DIR$/../../App.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -520,6 +526,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
