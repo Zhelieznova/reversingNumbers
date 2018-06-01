@@ -10,18 +10,28 @@ class App extends Component {
 
     this.state = {
       value: '',
+      note: false,
     };
   }
+
+  handleError = (value) => {
+    this.setState({
+      value: this.state.value,
+      note: value,
+    });
+  };
 
   handleNormal = (value) => {
     this.setState({
       value,
+      note: false,
     });
   };
 
   handleReversed = (value) => {
     this.setState({
       value: reverseNumber(value),
+      note: false,
     });
   };
 
@@ -34,7 +44,6 @@ class App extends Component {
 
 
   render() {
-    // const note = this.isHidden;
     return (
       <form>
         Enter any number(s) from 1 to 9
@@ -42,11 +51,13 @@ class App extends Component {
           name="Normal number: "
           value={this.state.value}
           onValueChange={this.handleNormal}
+          onError={this.handleError}
         />
         <ItemName
           name="Reversed number: "
           value={reverseNumber(this.state.value)}
           onValueChange={this.handleReversed}
+          onError={this.handleError}
         />
         <br />
         <input
@@ -54,6 +65,9 @@ class App extends Component {
           value="Change Values"
           onClick={this.handleOnClick}
         />
+        {
+          this.state.note && <div>Only numbers!</div>
+        }
       </form>);
   }
 }

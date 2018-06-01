@@ -3,9 +3,12 @@ import PropTypes from 'prop-types';
 
 export default class ItemName extends Component {
   handleChange = (e) => {
-    if (isNaN(e.target.value)) {
-      alert('sda');
-    } else this.props.onValueChange(e.target.value);
+    const numberValue = Number(e.target.value);
+    if (Number.isNaN(numberValue)) {
+      this.props.onError(true);
+    } else {
+      this.props.onValueChange(e.target.value);
+    }
   };
   render() {
     return (
@@ -24,6 +27,7 @@ export default class ItemName extends Component {
 ItemName.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
+  onError: PropTypes.func.isRequired,
   onValueChange: PropTypes.func.isRequired,
 };
 
