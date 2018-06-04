@@ -11,7 +11,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "react-scripts test --env=jsdom",
     "lint": "eslint src",
     "eject": "react-scripts eject"
   },
@@ -22,6 +22,7 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.8.2",
-    "jest": "^23.1.0"
+    "jest": "^23.1.0",
+    "react-test-renderer": "^16.4.0"
   }
 }

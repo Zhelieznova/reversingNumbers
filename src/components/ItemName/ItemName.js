@@ -25,9 +25,9 @@ export default class ItemName extends Component {
   }
 }
 ItemName.propTypes = {
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  onError: PropTypes.func.isRequired,
-  onValueChange: PropTypes.func.isRequired,
+  name: PropTypes.string,
+  value: PropTypes.string,
+  onError: PropTypes.func,
+  onValueChange: PropTypes.func,
 };
 
