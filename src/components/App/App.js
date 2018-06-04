@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ItemName from './ItemName';
-import reverseNumber from '../utils/reverseNumber';
-import '../css/App.css';
+import ItemName from '../ItemName/ItemName';
+import reverseNumber from '../../utils/reverseNumber';
+import '../../css/App.css';
 
 
 class App extends Component {
