@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ok 1`] = `
+<label>
+  <br />
+  Normal number: 
+  <input
+    onChange={[Function]}
+    type="text"
+    value="120"
+  />
+</label>
+`;
