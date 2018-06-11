@@ -1,7 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import renderer from 'react-test-renderer';
+import { shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import ItemName from './ItemName';
+
+
+configure({ adapter: new Adapter() });
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -10,8 +14,6 @@ it('renders without crashing', () => {
 });
 
 it('ok', () => {
-  const tree = renderer
-    .create(<ItemName name="Normal number: " value="120" />)
-    .toJSON();
+  const tree = shallow(<ItemName name="Normal number: " value="120" />);
   expect(tree).toMatchSnapshot();
 });
