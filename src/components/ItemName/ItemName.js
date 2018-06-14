@@ -15,6 +15,7 @@ export default class ItemName extends Component {
       <label>
         <br />
         {this.props.name}
+        <div>Some text</div>
         <input
           type="text"
           value={this.props.value}
