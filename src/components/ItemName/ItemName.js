@@ -19,7 +19,7 @@ export default class ItemName extends Component {
         <input
           type="text"
           value={this.props.value}
-          onChange={this.handleChange}
+          onChange={(e) => this.handleChange(e)}
         />
       </label>
     );

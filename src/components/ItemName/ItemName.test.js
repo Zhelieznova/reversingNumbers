@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import toJSON from 'enzyme-to-json'
+import toJSON from 'enzyme-to-json';
 import ItemName from './ItemName';
 
 describe('components/ItemName', () => {
@@ -9,7 +9,7 @@ describe('components/ItemName', () => {
     expect(toJSON(tree)).toMatchSnapshot();
   });
 
-  it('calls handleChane with updated target.value', () => {
+  it('calls handleChange with updated target.value', () => {
     const tree = shallow(<ItemName
       name="Normal number: "
       value="120"
@@ -18,7 +18,8 @@ describe('components/ItemName', () => {
     const instance = tree.instance();
     jest.spyOn(instance, 'handleChange');
     const testData = { target: { value: 'Test' } };
-    tree.find('input').prop('onChange')(testData);
+    tree.find('input').simulate('change', testData);
+    instance.forceUpdate();
     expect(instance.handleChange).toHaveBeenCalledWith(testData);
   });
 });
